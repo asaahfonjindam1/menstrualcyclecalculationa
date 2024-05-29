@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="N/A"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/p1"
+                android:text="back" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/current_admin_page"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Home Page"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <RadioButton
+                    android:id="@+id/short_court"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Court" />
+            <RadioButton
+                    android:id="@+id/regular_court"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regular Court" />
+            <RadioButton
+                android:id="@+id/long_court"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long Court" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="UselessParent">
+        <EditText
+            android:id="@+id/first_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Date" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <EditText
+                android:id="@+id/last_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Date" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SUBMIT" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Ovulation Date" />
+            <TextView
+                android:id="@+id/ovulation_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="N/B"
+                android:ems="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Last Day" />
+            <TextView
+                android:id="@+id/last_day"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="N/B"
+                android:ems="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Next Cycle" />
+            <TextView
+                android:id="@+id/next_cycle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="N/B"
+                android:ems="10" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
